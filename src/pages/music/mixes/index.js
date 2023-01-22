@@ -60,18 +60,16 @@ export default function MixesPage() {
 
           <motion.li variants={fadeInUp}>
             <Link
-              className="block bg-fixed opacity-70 bg-no-repeat bg-center bg-[url('https://raw.githubusercontent.com/JulioMontas/JulioMontas.com-PHP/master/img/projects/SlitScan/slit_scan05.jpg')] bg-[rgba(150,150,150,0.10)] border-4 border-[#ECD905] sm:h-[75vh] lg:h-[85vh] sm:w-[280px] lg:w-[320px] rounded-tl-[195.5px] rounded-tr-[10px] rounded-br-[195.5px] rounded-bl-[30px] hover:border-[#333] transition-all duration-700"
+              className="block bg-fixed opacity-70 bg-no-repeat bg-center bg-[rgba(150,150,150,0.10)] border-4 border-[#ECD905] sm:h-[75vh] lg:h-[75vh] sm:w-[280px] lg:w-[320px] rounded-tl-[195.5px] rounded-tr-[10px] rounded-br-[195.5px] rounded-bl-[30px] hover:border-[#333] transition-all duration-700"
               to="/music/mixes/half-and-half-raw-studio-mix"
             >
-              <h2 className="mt-[20vh] text-center font-normal text-[yellow] py-3 tracking-wider text-[18px] bg-[rgba(0,0,0,0.85)]">
+              <h2 className="mt-[20vh] text-center font-normal text-[yellow] py-3 tracking-wider text-[16px] bg-[rgba(0,0,0,0.85)]">
                 Half and Half (Raw Studio Mix)
               </h2>
             </Link>
           </motion.li>
+
           {/*
-          <motion.li variants={fadeInUp}>
-            <Link className="block bg-[rgba(150,150,150,0.10)] border-2 border-[#ECD905] h-[85vh] sm:w-[280px] lg:w-[320px] rounded-tl-[195.5px] rounded-tr-[195.5px] rounded-br-[10px] rounded-bl-[108px] hover:border-[#333] transition-all duration-700" to="/mixes/01"></Link>
-          </motion.li>
           <motion.li variants={fadeInUp}>
             <Link className="block bg-[rgba(150,150,150,0.10)] border-2 border-[#ECD905] h-[85vh] sm:w-[280px] lg:w-[320px] rounded-tl-[0] rounded-tr-[195.5px] rounded-br-[29px] rounded-bl-[195.5px] hover:border-[#333] transition-all duration-700" to="/mixes/01"></Link>
           </motion.li>

@@ -65,53 +65,66 @@ export default class Index extends React.Component {
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
         <motion.div variants={stagger} className="flex sm:gap-1 lg:gap-10 items-center items-baseline sm:flex-col tracking-widest">
         <div className="sm:w-[90vw] lg:w-[45vw] grid gap-20">
-
-          <motion.ul variants={fadeInUp} className="socialMediaLinks">
-            <li className="mb-2">
-              <h2 variants={fadeInUp} className="justify-self-end text-[#fde047] sm:text-sm lg:text-[18px]">Follow Me</h2>
-            </li>
-            <li>
-              <a href="https://ra.co/dj/montas" target="_blank" className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700">
+          <ul variants={fadeInUp} className="socialMediaLinks">
+            <motion.li className="mb-2" variants={fadeInUp}>
+              <h2 className="justify-self-end text-[#fde047] sm:text-sm lg:text-[18px]">
+                Follow Me
+              </h2>
+            </motion.li>
+            {/* <motion.li variants={fadeInUp}>
+              <a href="https://ra.co/dj/montas" 
+                 target="_blank" 
+                 rel="noreferrer" 
+                 className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700"
+              >
                 Resident Advisor
               </a>
-            </li>
-            <li className="mt-[1rem]">
-              <a href="https://soundcloud.com/juliomontas" target="_blank" className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700">
+            </motion.li> */}
+            <motion.li className="mt-[1rem]" variants={fadeInUp}>
+              <a href="https://soundcloud.com/juliomontas" 
+                 target="_blank" 
+                 rel="noreferrer" 
+                 className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700"
+              >
                 SoundCloud
               </a>
-            </li>
-            <li className="mt-[1rem]">
-              <a href="https://instagram.com/juliomontas" target="_blank" className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700">
+            </motion.li>
+            <motion.li className="mt-[1rem]" variants={fadeInUp}>
+              <a href="https://instagram.com/juliomontas" 
+                 target="_blank" 
+                 rel="noreferrer" 
+                 className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700"
+              >
                 Instagram
               </a>
-            </li>
-            <li className="mt-[1rem]">
-              <a href="https://www.twitch.tv/montasmusic" target="_blank" className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700">
+            </motion.li>
+            {/* <motion.li className="mt-[1rem]" variants={fadeInUp}>
+              <a href="https://www.twitch.tv/montasmusic" 
+                 target="_blank" 
+                 rel="noreferrer" 
+                 className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700"
+              >
                 Twitch
               </a>
-            </li>
-          </motion.ul>
-
-          <motion.div variants={fadeInUp}>
-            <h2 variants={fadeInUp} className="justify-self-end mb-3 text-[#fde047] sm:text-sm lg:text-[18px]">Contact Me</h2>
-            {/*
-            <a variants={fadeInUp}
-              href=""
-              className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700"
-            >
-              Collaboration
-            </a>
-            */}
+            </motion.li> */}
+          </ul>
+          <ul variants={fadeInUp} className="socialMediaLinks">
+            <motion.li className="mb-2" variants={fadeInUp}>
+              <h2 className="justify-self-end text-[#fde047] sm:text-sm lg:text-[18px]">
+                Contact Me
+              </h2>
+            </motion.li>
+            <motion.li variants={fadeInUp}>
             <a variants={fadeInUp}
               href="https://forms.gle/BFRcoQSZryhp3dWz6"
               target="_blank"
+              rel="noreferrer" 
               className="mt-[1rem] block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700"
             >
               Booking
             </a>
-          </motion.div>
-
-
+            </motion.li>
+          </ul>
           {/*
           <motion.form variants={fadeInUp}
             name="contact"
@@ -150,7 +163,6 @@ export default class Index extends React.Component {
             </div>
           </motion.form>
           */}
-
         </div>
         </motion.div>
       </motion.div>
