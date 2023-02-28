@@ -69,6 +69,17 @@ export default function MixesPage() {
             </Link>
           </motion.li>
 
+          <motion.li variants={fadeInUp}>
+            <Link
+              className="block bg-[rgba(150,150,150,0.10)] border-2 border-[#ECD905] h-[85vh] sm:w-[280px] lg:w-[320px] rounded-tl-[0] rounded-tr-[195.5px] rounded-br-[29px] rounded-bl-[195.5px] hover:border-[#333] transition-all duration-700"
+              to="/music/mixes/cogito-ergo-sum"
+            >
+              <h2 className="mt-[20vh] text-center font-normal text-[yellow] py-3 tracking-wider text-[16px] bg-[rgba(0,0,0,0.85)]">
+                Cogito, Ergo Sum
+              </h2>
+            </Link>
+          </motion.li>
+
           {/*
           <motion.li variants={fadeInUp}>
             <Link className="block bg-[rgba(150,150,150,0.10)] border-2 border-[#ECD905] h-[85vh] sm:w-[280px] lg:w-[320px] rounded-tl-[0] rounded-tr-[195.5px] rounded-br-[29px] rounded-bl-[195.5px] hover:border-[#333] transition-all duration-700" to="/mixes/01"></Link>
