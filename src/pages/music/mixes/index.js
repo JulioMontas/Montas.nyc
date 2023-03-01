@@ -39,7 +39,7 @@ export default function MixesPage() {
     <Layout>
       <Helmet>
         <title>Mixes • DJ & Producer – Official Website</title>
-        <meta name="description" content="From the Dominican Republic based in NYC." />
+        <meta name="description" content="Playing Minimal House, Techno based in NYC." />
         <link rel="canonical" href="https://montas.nyc/mixes" />
       </Helmet>
       {/*
@@ -56,14 +56,14 @@ export default function MixesPage() {
       </svg>
       */}
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
-        <motion.ul variants={stagger} ref={ref} className="container w-full flex gap-[1rem] overflow-x-scroll ...">
+        <motion.ul variants={stagger} ref={ref} className="container w-full flex gap-[2rem] overflow-x-scroll ...">
 
           <motion.li variants={fadeInUp}>
             <Link
-              className="block bg-fixed opacity-70 bg-no-repeat bg-center bg-[rgba(150,150,150,0.10)] border-4 border-[#ECD905] sm:h-[75vh] lg:h-[75vh] sm:w-[280px] lg:w-[320px] rounded-tl-[195.5px] rounded-tr-[10px] rounded-br-[195.5px] rounded-bl-[30px] hover:border-[#333] transition-all duration-700"
+              className="block bg-no-repeat bg-center bg-[rgba(150,150,150,0.10)] border-2 border-[#ECD905] sm:h-[75vh] lg:h-[75vh] sm:w-[280px] lg:w-[320px] rounded-tl-[195.5px] rounded-tr-[10px] rounded-br-[195.5px] rounded-bl-[30px] hover:border-[#333] transition-all duration-700"
               to="/music/mixes/half-and-half-raw-studio-mix"
             >
-              <h2 className="mt-[20vh] text-center font-normal text-[yellow] py-3 tracking-wider text-[16px] bg-[rgba(0,0,0,0.85)]">
+              <h2 className="mt-[30vh] text-center font-normal text-[yellow] py-3 tracking-wider text-[16px] bg-[rgba(0,0,0,0.85)]">
                 Half and Half (Raw Studio Mix)
               </h2>
             </Link>
@@ -71,10 +71,10 @@ export default function MixesPage() {
 
           <motion.li variants={fadeInUp}>
             <Link
-              className="block bg-[rgba(150,150,150,0.10)] border-2 border-[#ECD905] h-[85vh] sm:w-[280px] lg:w-[320px] rounded-tl-[0] rounded-tr-[195.5px] rounded-br-[29px] rounded-bl-[195.5px] hover:border-[#333] transition-all duration-700"
+              className="block bg-[rgba(150,150,150,0.10)] border-2 border-[#ECD905] sm:h-[75vh] h-[75vh] sm:w-[280px] lg:w-[320px] rounded-tl-[0] rounded-tr-[195.5px] rounded-br-[29px] rounded-bl-[195.5px] hover:border-[#333] transition-all duration-700"
               to="/music/mixes/cogito-ergo-sum"
             >
-              <h2 className="mt-[20vh] text-center font-normal text-[yellow] py-3 tracking-wider text-[16px] bg-[rgba(0,0,0,0.85)]">
+              <h2 className="mt-[30vh] text-center font-normal text-[yellow] py-3 tracking-wider text-[16px] bg-[rgba(0,0,0,0.85)]">
                 Cogito, Ergo Sum
               </h2>
             </Link>
