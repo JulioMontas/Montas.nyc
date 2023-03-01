@@ -71,7 +71,7 @@ export default class Index extends React.Component {
                 Follow Me
               </h2>
             </motion.li>
-            {/* <motion.li variants={fadeInUp}>
+            <motion.li variants={fadeInUp}>
               <a href="https://ra.co/dj/montas" 
                  target="_blank" 
                  rel="noreferrer" 
@@ -79,7 +79,7 @@ export default class Index extends React.Component {
               >
                 Resident Advisor
               </a>
-            </motion.li> */}
+            </motion.li>
             <motion.li className="mt-[1rem]" variants={fadeInUp}>
               <a href="https://soundcloud.com/juliomontas" 
                  target="_blank" 
