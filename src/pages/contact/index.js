@@ -148,17 +148,60 @@ export default class Index extends React.Component {
 
             <div className="field">
                 <div className="control w-full">
-
-                <select id="location" name="location" onChange={this.handleChange}> 
+                <label for="location">Location:</label>
+                <select id="location" name="Location" onChange={this.handleChange}> 
                   <option value="private">Private party</option>
+                  <option value="restaurant">Lounge</option>
                   <option value="restaurant">Restaurant</option>
+                  <option value="restaurant">Club</option>
+                  <option value="restaurant">Other</option>
                 </select>
+                </div>
+             </div>
 
+             <div className="field">
+                <div className="control w-full">
+                  <label>
+                    Date:
+                    <input type="date" id="start" name="trip-start"value="2023-03-16" min="2023-03-01" max="2025-12-31" onChange={this.handleChange} required={true}></input>
+                  </label>
+                </div>
+             </div>
+
+
+             <div className="field">
+                <div className="control w-full">
+                  <label for="apptStart">Start:</label>
+                  <input type="time" id="apptStart" name="apptStart" min="09:00" max="18:00" required={true} onChange={this.handleChange} />
+                </div>
+             </div>
+
+             <div className="field">
+                <div className="control w-full">
+                  <label for="apptEnd">Ends:</label>
+                  <input type="time" id="apptEnd" name="apptEnd" min="09:00" max="18:00" required={true} onChange={this.handleChange} />
+                </div>
+             </div>
+
+
+             <div className="field">
+                <div className="control w-full">
+                  <label for="tentacles">Overall budget:</label>
+                  <input type="number" id="tentacles" name="tentacles" value="400" onChange={this.handleChange} />
                 </div>
               </div>
 
+              <div className="field">
+                <div className="control w-full">
+                  <label for="guests">Aprox. number of guests:</label>
+                  <input type="number" id="guests" name="guests" value="200" onChange={this.handleChange} />
+                </div>
+              </div>
+
+
             <div className="field">
                 <div className="control w-full">
+
                 <input
                       className="bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-sm rounded-tl-[10px] rounded-bl-[10px] pl-3 pt-[1.2rem] pb-[0.8rem] tracking-widest w-[200px]"
                       placeholder="Name"
@@ -167,6 +210,8 @@ export default class Index extends React.Component {
                       onChange={this.handleChange}
                       id={"name"}
                       required={true}
+                      minlength="4" 
+                      maxlength="12"
                     />
                 </div>
               </div>
@@ -196,6 +241,10 @@ export default class Index extends React.Component {
                     />
                 </div>
               </div>
+
+
+
+
 
 
               <div className="field">
