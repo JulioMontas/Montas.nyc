@@ -108,12 +108,13 @@ export default class Index extends React.Component {
               </a>
             </motion.li> */}
           </ul>
-          <ul variants={fadeInUp} className="socialMediaLinks">
+          {/* <ul variants={fadeInUp} className="socialMediaLinks">
             <motion.li className="mb-2" variants={fadeInUp}>
               <h2 className="justify-self-end text-[#fde047] sm:text-sm lg:text-[18px]">
                 Contact Me
               </h2>
             </motion.li>
+            
             <motion.li variants={fadeInUp}>
             <a variants={fadeInUp}
               href="https://forms.gle/BFRcoQSZryhp3dWz6"
@@ -124,8 +125,9 @@ export default class Index extends React.Component {
               Booking
             </a>
             </motion.li>
-          </ul>
-          {/*
+          </ul> */}
+
+          
           <motion.form variants={fadeInUp}
             name="contact"
             method="post"
@@ -134,7 +136,7 @@ export default class Index extends React.Component {
             data-netlify-honeypot="bot-field"
             onSubmit={this.handleSubmit}
           >
-            <h2 variants={fadeInUp} className="justify-self-end mb-3 text-[#fde047] sm:text-sm lg:text-[18px]">Stay Updated 🎉</h2>
+            <h2 variants={fadeInUp} className="justify-self-end mb-3 text-[#fde047] sm:text-sm lg:text-[18px]">Contact Me 🎉</h2>
             <input type="hidden" name="form-name" value="contact" />
             <div hidden>
               <label>
@@ -143,6 +145,44 @@ export default class Index extends React.Component {
               </label>
             </div>
             <div className="flex">
+
+            <div className="field">
+                <div className="control w-full">
+
+                <select id="EventType" name="cars">
+                  <option value="private" onChange={this.handleChange}>Private party</option>
+                  <option value="restaurant" onChange={this.handleChange}>Restaurant</option>
+                </select>
+
+                <input
+                      className="bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-sm rounded-tl-[10px] rounded-bl-[10px] pl-3 pt-[1.2rem] pb-[0.8rem] tracking-widest w-[200px]"
+                      placeholder="Name"
+                      type={"text"}
+                      name={"name"}
+                      onChange={this.handleChange}
+                      id={"name"}
+                      required={true}
+                    />
+
+
+
+                </div>
+              </div>
+
+            <div className="field">
+                <div className="control w-full">
+                <input
+                      className="bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-sm rounded-tl-[10px] rounded-bl-[10px] pl-3 pt-[1.2rem] pb-[0.8rem] tracking-widest w-[200px]"
+                      placeholder="Name"
+                      type={"text"}
+                      name={"name"}
+                      onChange={this.handleChange}
+                      id={"name"}
+                      required={true}
+                    />
+                </div>
+              </div>
+
               <div className="field">
                 <div className="control w-full">
                   <input
@@ -155,6 +195,21 @@ export default class Index extends React.Component {
                   />
                 </div>
               </div>
+
+              <div className="field">
+                <div className="control w-full">
+                <textarea
+                    className="bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-sm rounded-tl-[10px] rounded-bl-[10px] pl-3 pt-[1.2rem] pb-[0.8rem] tracking-widest w-[200px]"
+                      placeholder="Message"
+                      name={"message"}
+                      onChange={this.handleChange}
+                      id={"message"}
+                      required={true}
+                    />
+                </div>
+              </div>
+
+
               <div className="field">
                 <button type="submit" className="bg-[rgba(150,150,150,0.10)] bg-[#ECD905] text-[#333] text-lg rounded-br-[10px] rounded-tr-[10px] w-full pt-4 pb-3 w-[120px]">
                   Subscribe
@@ -162,7 +217,9 @@ export default class Index extends React.Component {
               </div>
             </div>
           </motion.form>
-          */}
+         
+
+
         </div>
         </motion.div>
       </motion.div>
