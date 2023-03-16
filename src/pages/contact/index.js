@@ -172,14 +172,14 @@ export default class Index extends React.Component {
              <div className="field">
                 <div className="control w-full">
                   <label for="appt-start">Start:</label>
-                  <input id="appt-start" type="time" name="Start" value="21:00" onChange={this.handleChange} />
+                  <input id="appt-start" type="time" name="Start" min="02:00" max="18:00" onChange={this.handleChange} />
                 </div>
              </div>
 
              <div className="field">
                 <div className="control w-full">
                   <label for="appt-end">Ends:</label>
-                  <input type="time" id="appt-end" name="End" value="02:00" onChange={this.handleChange} />
+                  <input type="time" id="appt-end" name="End" min="02:00" max="18:00" onChange={this.handleChange} />
                 </div>
              </div>
 
