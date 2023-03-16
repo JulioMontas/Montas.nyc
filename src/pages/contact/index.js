@@ -163,7 +163,7 @@ export default class Index extends React.Component {
                 <div className="control w-full">
                   <label>
                     Date:
-                    <input type="date" id="start" name="trip-start"value="2023-03-16" min="2023-03-01" max="2025-12-31" onChange={this.handleChange} required={true}></input>
+                    <input type="date" id="date" name="Date" value="2023-03-16" min="2023-03-01" max="2025-12-31" onChange={this.handleChange} required={true}></input>
                   </label>
                 </div>
              </div>
@@ -171,37 +171,34 @@ export default class Index extends React.Component {
 
              <div className="field">
                 <div className="control w-full">
-                  <label for="apptStart">Start:</label>
-                  <input type="time" id="apptStart" name="apptStart" min="09:00" max="18:00" required={true} onChange={this.handleChange} />
+                  <label for="appt-start">Start:</label>
+                  <input id="appt-start" type="time" name="Start" value="21:00" onChange={this.handleChange} />
                 </div>
              </div>
 
              <div className="field">
                 <div className="control w-full">
-                  <label for="apptEnd">Ends:</label>
-                  <input type="time" id="apptEnd" name="apptEnd" min="09:00" max="18:00" required={true} onChange={this.handleChange} />
+                  <label for="appt-end">Ends:</label>
+                  <input type="time" id="appt-end" name="End" value="02:00" onChange={this.handleChange} />
                 </div>
              </div>
 
-
              <div className="field">
                 <div className="control w-full">
-                  <label for="tentacles">Overall budget:</label>
-                  <input type="number" id="tentacles" name="tentacles" value="400" onChange={this.handleChange} />
+                  <label for="budget">Overall budget:</label>
+                  <input type={"number"} id="budget" name="Budget" min="250" max="10000" step="5" onChange={this.handleChange} />
                 </div>
               </div>
 
               <div className="field">
                 <div className="control w-full">
                   <label for="guests">Aprox. number of guests:</label>
-                  <input type="number" id="guests" name="guests" value="200" onChange={this.handleChange} />
+                  <input type={"number"} id="guests" name="Guests" min="1" max="10000" onChange={this.handleChange} />
                 </div>
               </div>
 
-
             <div className="field">
                 <div className="control w-full">
-
                 <input
                       className="bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-sm rounded-tl-[10px] rounded-bl-[10px] pl-3 pt-[1.2rem] pb-[0.8rem] tracking-widest w-[200px]"
                       placeholder="Name"
@@ -242,14 +239,9 @@ export default class Index extends React.Component {
                 </div>
               </div>
 
-
-
-
-
-
               <div className="field">
                 <button type="submit" className="bg-[rgba(150,150,150,0.10)] bg-[#ECD905] text-[#333] text-lg rounded-br-[10px] rounded-tr-[10px] w-full pt-4 pb-3 w-[120px]">
-                  Subscribe
+                  Submit
                 </button>
               </div>
             </div>
