@@ -127,16 +127,22 @@ export default class Index extends React.Component {
             </motion.li>
           </ul> */}
 
-          
-          <motion.form variants={fadeInUp}
+          <form 
             name="contact"
             method="post"
             action="/contact/success/"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             onSubmit={this.handleSubmit}
+            className="w-full"
           >
-            <h2 variants={fadeInUp} className="justify-self-end mb-3 text-[#fde047] sm:text-sm lg:text-[18px]">Contact Me 🎉</h2>
+            <motion.h2 
+              variants={fadeInUp} 
+              className="justify-self-end mb-3 text-[#fde047] sm:text-sm lg:text-[18px]">
+                Contact Me 🎉
+            </motion.h2>
+
+
             <input type="hidden" name="form-name" value="contact" />
             <div hidden>
               <label>
@@ -144,63 +150,108 @@ export default class Index extends React.Component {
                 <input name="bot-field" onChange={this.handleChange} />
               </label>
             </div>
-            <div className="flex">
-
-            <div className="field">
-                <div className="control w-full">
-                <label for="location">Location:</label>
-                <select id="location" name="Location" onChange={this.handleChange}> 
-                  <option value="private">Private party</option>
-                  <option value="restaurant">Lounge</option>
-                  <option value="restaurant">Restaurant</option>
-                  <option value="restaurant">Club</option>
-                  <option value="restaurant">Other</option>
-                </select>
-                </div>
-             </div>
-
-             <div className="field">
-                <div className="control w-full">
+            <div>
+               
+         {/* <div className="grid grid-cols-3 gap-3">
+             <div className="md:w-1/3 mb-6 md:mb-0">
+                <div className="control">
                   <label>
-                    Date:
-                    <input type="date" id="date" name="Date" value="2023-03-16" min="2023-03-01" max="2025-12-31" onChange={this.handleChange} required={true}></input>
+                    <p className="block text-gray-700 text-sm font-bold mb-2 color-white">Date:</p>
+                    <input 
+                      type="date" 
+                      id="date" 
+                      name="Date" 
+                      value="2023-03-16" 
+                      min="2023-03-01" 
+                      max="2025-12-31" 
+                      onChange={this.handleChange} 
+                      required={true} className="bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-sm rounded-tl-[10px] rounded-bl-[10px] pl-3 pt-[1.2rem] pb-[0.8rem] w-[288px]" ></input>
                   </label>
                 </div>
              </div>
-
-
-             <div className="field">
-                <div className="control w-full">
-                  <label for="appt-start">Start:</label>
-                  <input id="appt-start" type="time" name="Start" min="02:00" max="18:00" onChange={this.handleChange} />
+             <div className="md:w-1/3 mb-6 md:mb-0">
+                <div className="control">
+                  <label for="appt-start" className="block text-gray-700 text-sm font-bold mb-2 color-white">Start:</label>
+                  <input 
+                    id="appt-start" 
+                    type="time" 
+                    name="Start" 
+                    min="02:00" 
+                    max="18:00" 
+                    onChange={this.handleChange} 
+                    className="bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-sm rounded-tl-[10px] rounded-bl-[10px] pl-3 pt-[1.2rem] pb-[0.8rem] w-[288px]" />
                 </div>
              </div>
-
-             <div className="field">
-                <div className="control w-full">
-                  <label for="appt-end">Ends:</label>
-                  <input type="time" id="appt-end" name="End" min="02:00" max="18:00" onChange={this.handleChange} />
+             <div className="md:w-1/3 mb-6 md:mb-0">
+                <div className="control">
+                  <label for="appt-end" className="block text-gray-700 text-sm font-bold mb-2 color-white" for="appt-end">Ends:</label>
+                  <input 
+                    type="time" 
+                    id="appt-end" 
+                    name="End" 
+                    min="02:00" 
+                    max="18:00" 
+                    onChange={this.handleChange} 
+                    className="bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-sm rounded-tl-[10px] rounded-bl-[10px] pl-3 pt-[1.2rem] pb-[0.8rem w-[288px]"/>
                 </div>
              </div>
+             </div> */}
 
-             <div className="field">
-                <div className="control w-full">
-                  <label for="budget">Overall budget:</label>
-                  <input type={"number"} id="budget" name="Budget" min="250" max="10000" step="5" onChange={this.handleChange} />
+
+            {/* <div class="grid grid-cols-3 gap-3">
+              <div className="md:w-1/3 mb-6 md:mb-0">
+                <div className="inline-block relative">
+                <label for="budget" className="block text-gray-700 text-sm font-bold mb-2 color-white">Location:</label>
+                  <select id="location" name="Location" onChange={this.handleChange} className="block appearance-none w-full bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-sm rounded-tl-[10px] rounded-bl-[10px] pl-3 pt-[1.2rem] pb-[0.8rem] tracking-widest w-[288px] focus:outline-none focus:shadow-outline"> 
+                    <option value="private">Private party</option>
+                    <option value="restaurant">Lounge</option>
+                    <option value="restaurant">Restaurant</option>
+                    <option value="restaurant">Club</option>
+                    <option value="restaurant">Other</option>
+                  </select>
+                  <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                  </div>
                 </div>
               </div>
-
-              <div className="field">
-                <div className="control w-full">
-                  <label for="guests">Aprox. number of guests:</label>
-                  <input type={"number"} id="guests" name="Guests" min="1" max="10000" onChange={this.handleChange} />
-                </div>
+              <div className="md:w-1/2 mb-6 md:mb-0">
+                  <div className="control">
+                    <label for="budget" className="block text-gray-700 text-sm font-bold mb-2 color-white">Overall budget:</label>
+                    <input 
+                      type={"number"}
+                      id="budget" 
+                      name="Budget" 
+                      min="250" 
+                      max="10000" 
+                      step="5" 
+                      onChange={this.handleChange} 
+                      className="bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-sm rounded-tl-[10px] rounded-bl-[10px] pl-3 pt-[1.2rem] pb-[0.8rem] tracking-widest w-[288px]"
+                    />
+                  </div>
               </div>
+              <div className="md:w-1/2 mb-6 md:mb-0">
+                  <div className="control">
+                    <label for="guests" className="block text-gray-700 text-sm font-bold mb-2 color-white">Total Guests:</label>
+                    <input 
+                      type={"number"} 
+                      id="guests" 
+                      name="Guests" 
+                      min="1" 
+                      max="10000" 
+                      onChange={this.handleChange} 
+                      className="bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-sm rounded-tl-[10px] rounded-bl-[10px] pl-3 pt-[1.2rem] pb-[0.8rem] w-[288px]"
+                    />
+                  </div>
+              </div>
+            </div> */}
 
-            <div className="field">
-                <div className="control w-full">
-                <input
-                      className="bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-sm rounded-tl-[10px] rounded-bl-[10px] pl-3 pt-[1.2rem] pb-[0.8rem] tracking-widest w-[200px]"
+            <div className="grid grid-cols-2 gap-2">
+
+                <div className="field mb-2" variants={fadeInUp} >
+                  <div className="control">
+                    <motion.input
+                      variants={fadeInUp}
+                      className="bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-sm rounded-tl-lg pl-3 pt-[1.2rem] pb-[0.8rem] tracking-widest w-full"
                       placeholder="Name"
                       type={"text"}
                       name={"name"}
@@ -208,46 +259,53 @@ export default class Index extends React.Component {
                       id={"name"}
                       required={true}
                       minlength="4" 
-                      maxlength="12"
+                      maxlength="18"
                     />
+                  </div>
                 </div>
-              </div>
-
-              <div className="field">
-                <div className="control w-full">
-                  <input
-                    placeholder="Email"
-                    type={"email"}
-                    name={"email"}
-                    onChange={this.handleChange}
-                    required={true}
-                    className="bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-sm rounded-tl-[10px] rounded-bl-[10px] pl-3 pt-[1.2rem] pb-[0.8rem] tracking-widest w-[200px]"
-                  />
-                </div>
-              </div>
-
-              <div className="field">
-                <div className="control w-full">
-                <textarea
-                    className="bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-sm rounded-tl-[10px] rounded-bl-[10px] pl-3 pt-[1.2rem] pb-[0.8rem] tracking-widest w-[200px]"
-                      placeholder="Message"
-                      name={"message"}
+              
+                <div className="field mb-2">
+                  <div className="control">
+                    <motion.input
+                      variants={fadeInUp}
+                      placeholder="Email"
+                      type={"email"}
+                      name={"email"}
                       onChange={this.handleChange}
-                      id={"message"}
                       required={true}
+                      className="bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-sm rounded-tr-lg pl-3 pt-[1.2rem] pb-[0.8rem] tracking-widest w-full"
+                    />
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div className="field mb-1">
+                <div className="control">
+                <motion.textarea
+                    variants={fadeInUp} 
+                    className="bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-sm pl-3 pt-[1.2rem] pb-[0.8rem] tracking-widest w-full h-[10rem]"
+                    placeholder="Message"
+                    name={"message"}
+                    onChange={this.handleChange}
+                    id={"message"}
+                    required={true}
                     />
                 </div>
               </div>
 
               <div className="field">
-                <button type="submit" className="bg-[rgba(150,150,150,0.10)] bg-[#ECD905] text-[#333] text-lg rounded-br-[10px] rounded-tr-[10px] w-full pt-4 pb-3 w-[120px]">
+                <motion.button
+                  variants={fadeInUp}
+                  type="submit" 
+                  className="bg-[rgba(150,150,150,0.10)] bg-[#ECD905] text-[#333] text-lg rounded-b-lg w-full pt-4 pb-3 w-full">
                   Submit
-                </button>
+                </motion.button>
               </div>
-            </div>
-          </motion.form>
-         
 
+            </div>
+          </form>
 
         </div>
         </motion.div>
