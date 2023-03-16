@@ -149,22 +149,10 @@ export default class Index extends React.Component {
             <div className="field">
                 <div className="control w-full">
 
-                <select id="EventType" name="cars">
-                  <option value="private" onChange={this.handleChange}>Private party</option>
-                  <option value="restaurant" onChange={this.handleChange}>Restaurant</option>
+                <select id="location" name="location" onChange={this.handleChange}> 
+                  <option value="private">Private party</option>
+                  <option value="restaurant">Restaurant</option>
                 </select>
-
-                <input
-                      className="bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-sm rounded-tl-[10px] rounded-bl-[10px] pl-3 pt-[1.2rem] pb-[0.8rem] tracking-widest w-[200px]"
-                      placeholder="Name"
-                      type={"text"}
-                      name={"name"}
-                      onChange={this.handleChange}
-                      id={"name"}
-                      required={true}
-                    />
-
-
 
                 </div>
               </div>
