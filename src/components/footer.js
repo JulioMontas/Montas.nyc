@@ -20,7 +20,7 @@ const Footer = ({ siteTitle }) => (
           <Link className="" to="/music/mixes">🎹</Link>
         </li>
         <li className="sm:text-[16px] lg:text-[21px] sm:px-[1.25rem] ... lg:px-8 ...">
-          <Link className="" to="/about/">🙍</Link>
+          <Link className="" to="/about/">🙍🏾‍♂️</Link>
         </li>
         <li className="sm:text-[16px] lg:text-[21px]">
           <Link className="" to="/contact">✉️</Link>
