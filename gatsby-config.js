@@ -26,8 +26,7 @@ module.exports = {
         icon: `src/images/icon.png`,
       },
     },
-    "gatsby-plugin-gatsby-cloud",
-    "gatsby-plugin-netlify-cms",
+    "gatsby-plugin-netlify",
     "gatsby-plugin-postcss",
     {
       resolve: 'gatsby-plugin-google-analytics',
