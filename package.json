@@ -37,7 +37,6 @@
     "gatsby-source-contentful": "^8.7.0",
     "gatsby-source-filesystem": "^5.7.0",
     "gatsby-transformer-sharp": "^5.7.0",
-    "joi": "^17.8.4",
     "netlify-cms-app": "^2.15.72",
     "react": "^18.1.0",
     "react-confetti": "^6.1.0",
