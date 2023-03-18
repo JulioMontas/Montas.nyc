@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { SeoHead } from "../components/seo"
 
 const pageStyles = {
   color: "#232129",
@@ -46,4 +47,8 @@ const NotFoundPage = () => {
 
 export default NotFoundPage
 
-export const Head = () => <title>Not found</title>
+export const Head = () => (
+  <SeoHead 
+    title="Not found"
+  />
+)

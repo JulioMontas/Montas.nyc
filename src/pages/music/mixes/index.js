@@ -1,10 +1,9 @@
 import * as React from "react"
-import {Helmet} from "react-helmet";
 import Layout from "../../../components/layout"
 import { Link } from 'gatsby'
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
-// import "./styles.css";
+import { SeoHead } from "../../../components/seo"
 
 const easing = [.6, -.05, .01, .99];
 
@@ -37,11 +36,6 @@ export default function MixesPage() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Mixes • DJ & Producer – Official Website</title>
-        <meta name="description" content="Text" />
-        <link rel="canonical" href="https://montas.nyc/mixes" />
-      </Helmet>
       {/*
       <svg width="50" height="50" viewBox="0 0 50 50" className="transform-[rotate(-90deg)] fixed z-50">
         <circle cx="17" cy="17" r="15" pathLength="1" className="stroke-[yellow]" />
@@ -99,3 +93,7 @@ export default function MixesPage() {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SeoHead />
+)

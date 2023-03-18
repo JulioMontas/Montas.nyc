@@ -4,6 +4,7 @@ import Layout from "../../../components/layout"
 import { PerspectiveCamera, OrbitControls, Stars, Text3D, Float, Center } from '@react-three/drei'
 import Liquido from "../../../assets/LIQUIDO_Fluid_Regular.json"
 import ReactSoundcloud from 'react-soundcloud-embed';
+import { SeoHead } from "../../../components/seo"
 
 export default function MusicPage() {
   return (
@@ -29,3 +30,7 @@ export default function MusicPage() {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SeoHead />
+)

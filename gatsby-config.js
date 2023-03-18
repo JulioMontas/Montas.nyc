@@ -4,10 +4,11 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Montas.NYC`,
-    siteUrl: `https://montas.nyc/`,
-    description: `Blazing fast modern site generator for React`,
+    title: `Montas.NYC • DJ & Producer – Official Website`,
+    description: `Electronic Press Kit (EPK) Starter Template for Music Artists, Producers, and DJs.`,
     twitterUsername: `@montas.nyc`,
+    image: `/gatsby-icon.png`,
+    siteUrl: `https://montas.nyc/`,
   },
   flags: {
     DEV_SSR: true

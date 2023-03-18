@@ -2,6 +2,8 @@ import * as React from "react"
 import { navigate } from "gatsby-link";
 import Layout from "../../components/layout"
 import { motion } from "framer-motion"
+import { SeoHead } from "../../components/seo"
+
 
 const easing = [.6, -.05, .01, .99];
 
@@ -314,3 +316,9 @@ export default class Index extends React.Component {
     );
   }
 }
+
+export const Head = () => (
+  <SeoHead 
+    title="Contact Me"
+  />
+)

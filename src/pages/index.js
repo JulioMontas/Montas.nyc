@@ -1,18 +1,12 @@
 import * as React from "react"
 import { Canvas } from '@react-three/fiber'
-import {Helmet} from "react-helmet";
 import Layout from "../components/layout"
 import { PerspectiveCamera, OrbitControls, Stars, Cone } from '@react-three/drei'
+import { SeoHead } from "../components/seo"
 
 export default function IndexPage() {
   return (
     <Layout>
-      <Helmet>
-        <html lang="en" />
-        <title>M O N T Á S • DJ & Producer – Official Website</title>
-        <meta name="description" content="Text" />
-        <link rel="canonical" href="https://montas.nyc/" />
-      </Helmet>
       {/* <div className="grid grid-cols-1 place-items-center bg-[#333] h-[100%] w-full absolute">
         <div className="container">
           <h2 className="text-[#fef08a] font-bold lg:text-4xl m-0 p-0">
@@ -33,3 +27,7 @@ export default function IndexPage() {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SeoHead />
+)
