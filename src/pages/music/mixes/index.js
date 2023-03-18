@@ -39,7 +39,7 @@ export default function MixesPage() {
     <Layout>
       <Helmet>
         <title>Mixes • DJ & Producer – Official Website</title>
-        <meta name="description" content="Playing Minimal House, Techno based in NYC." />
+        <meta name="description" content="Text" />
         <link rel="canonical" href="https://montas.nyc/mixes" />
       </Helmet>
       {/*

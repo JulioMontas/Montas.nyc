@@ -39,7 +39,7 @@ export default function AboutPage() {
     <Layout>
       <Helmet>
         <title>About Me • DJ & Producer – Official Website</title>
-        <meta name="description" content="From the Dominican Republic based in NYC." />
+        <meta name="description" content="Text" />
         <link rel="canonical" href="https://montas.nyc/about" />
       </Helmet>
       <svg width="50" height="50" viewBox="0 0 50 50" className="transform-[rotate(-90deg)] fixed z-50">

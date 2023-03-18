@@ -8,8 +8,9 @@ export default function IndexPage() {
   return (
     <Layout>
       <Helmet>
+        <html lang="en" />
         <title>M O N T Á S • DJ & Producer – Official Website</title>
-        <meta name="description" content="From the Dominican Republic based in NYC." />
+        <meta name="description" content="Text" />
         <link rel="canonical" href="https://montas.nyc/" />
       </Helmet>
       {/* <div className="grid grid-cols-1 place-items-center bg-[#333] h-[100%] w-full absolute">
