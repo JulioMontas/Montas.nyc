@@ -15,11 +15,17 @@ export default function IndexPage() {
         </div>
       </div> */}
       <Canvas className="w-[100vw] h-[100vh]">
-        <PerspectiveCamera makeDefault fox={75} position={[0,0,5]} />
-        <OrbitControls autoRotate />
+        <PerspectiveCamera makeDefault fox={75} position={[0,1,7]} />
+        <OrbitControls 
+          autoRotate 
+          autoRotateSpeed={0.4}
+          enablePan={false}
+          enableRotate={false}
+          enableZoom={false}
+        />
         <Stars />
-        <ambientLight intensity={0.5} />
-        <spotLight position={[10,15,10]} angle={0.3} />
+        {/* <ambientLight intensity={0.5} />
+        <spotLight position={[10,15,10]} angle={0.3} /> */}
         <Cone>
           <meshBasicMaterial color="yellow" wireframe />
         </Cone>
